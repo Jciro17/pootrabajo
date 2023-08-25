@@ -4,8 +4,7 @@ public class CuentaBancaria {
     public int numero;
     public long saldo;
     public boolean activa;
-    public Banco banco;
-    public Persona propietario;
+
 
     public boolean consignar(long valorAConsignar) {
         if (this.activa) {
