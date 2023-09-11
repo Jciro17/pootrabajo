@@ -1,10 +1,33 @@
 package com.uco.banco.dominio;
 
 public class CuentaBancaria {
-    public int numero;
-    public long saldo;
-    public boolean activa;
+    private int numero;
+    private long saldo;
+    private boolean activa;
 
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    public void setSaldo(long saldo) {
+        this.saldo = saldo;
+    }
+
+    public void setActiva(boolean activa) {
+        this.activa = activa;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public long getSaldo() {
+        return saldo;
+    }
+
+    public boolean isActiva() {
+        return activa;
+    }
 
     public boolean consignar(long valorAConsignar) {
         if (this.activa) {
